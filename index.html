@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <style>
+      #addBtn{
+        outline: none; border: none; padding: 10px 12px; background-color: #31bb6fca; margin: 20px 0px; border-radius: 10px; font-weight: 600; color: white;
+      }
+      #addBtn:hover{
+        background-color: #289d5dca;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">Fatema's notes</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active  text-light" aria-current="page" href="#">Home</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container my-3">      
+        <div class="mb-3" >
+          <label for="text" class="form-label h4">Add a note</label>
+          <textarea class="form-control" id="text" rows="3"></textarea>
+          <button type="button" id="addBtn" >Success</button>
+        </div>
+
+<div class="d-flex justify-content-start flex-wrap" id="box">
+
+</div>
+        
+
+      </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
